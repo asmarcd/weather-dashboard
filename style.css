@@ -7,7 +7,6 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 header {
@@ -16,10 +15,14 @@ header {
     text-align: center;
 }
 
+main {
+    position: relative;
+}
+
 .search-box {
     background-color: lightgray;
     padding: 3px 3px;
-    height: 80vh;
+    height: 40vh;
     margin-left: 2%;
     padding: 2%;
 }
@@ -37,9 +40,28 @@ header {
     display: inline;
 }
 
-.forecast-header {
-    position: relative;
+.forecast-box {
+    margin: 5px
 }
+
 .forecast {
 background-color: blue;
+color: white;
+padding: 5px;
+margin: 5px;
+left: 25px;
+}
+
+.low {
+background-color: green;
+color: white;
+}
+
+.moderate {
+background-color: yellow;
+}
+
+.high {
+background-color: red;
+color: white;
 }
