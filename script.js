@@ -53,7 +53,7 @@ $('.search-btn').click(function () {
     // This API call pulls in UV index information
     function getUV() {
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/uvi?lat=' + cityLat + '&lon=' + cityLon + '&appid=0cffa7a68e5c4f60668c3938360e6edd',
+            url: 'https://api.openweathermap.org/data/2.5/uvi?lat=' + cityLat + '&lon=' + cityLon + '&appid=0cffa7a68e5c4f60668c3938360e6edd',
             method: 'GET'
         }).then(function (response) {
             var uvIndex = $("<p>");
