@@ -1,3 +1,5 @@
+createButton("Boston");
+
 // when a city is searched for, create a button. prepend that button to the top of teh list.
 var currentWeatherBox = $('.current-weather');
 // API call for current weather data
@@ -8,7 +10,7 @@ var cityLon = "";
 var cityLat = "";
 
 $('.search-btn').click(function () {
-
+    console.log('hello');
     currentWeatherBox.empty()
     cityNameInput = $('input').val().trim();
     cities.push(cityNameInput);
@@ -44,8 +46,11 @@ $('.search-btn').click(function () {
 })
 }); 
 
+
+
     function createButton() {
-        var cityButton = $("<button class = 'new-btn'>");
+        var cityButton = $("<button class = 'search-btn new-btn'>");
+        // cityButton.text(cityNameInput);
         cityButton.text(cityNameInput);
         $(".search-box").append(cityButton);
     };
