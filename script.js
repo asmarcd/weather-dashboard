@@ -63,8 +63,6 @@ function createButton() {
 
     cityButton.click(function () {
         ajaxCall(cityButton.text());
-        getUV(cityButton.text());
-        getFiveDay(cityButton.text());
     });
 };
 
